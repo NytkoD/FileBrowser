@@ -1,0 +1,6 @@
+VAR
+	FileBrowseMV_0 : FileBrowseMV;
+	NetworkOK : BOOL;
+	USB_OK : BOOL;
+	ShowDialog : BOOL;
+END_VAR

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="content_0_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="content_0.fileBrowseWidget1.FilterValueChange">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="FilterValueChange" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.FilterInput">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.FolderUpBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="FolderUpBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.FolderUp">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.ListClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="ListClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.ListClicked">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.OpenBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="OpenBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.Open">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.PageDownBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="PageDownBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.UIconnect.File.List.PageDown">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.PageUpBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="PageUpBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.UIconnect.File.List.PageUp">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.StepDownBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="StepDownBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.UIconnect.File.List.StepDown">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="content_0.fileBrowseWidget1.StepUpBtnClick">
+      <Source xsi:type="widgets.FileBrowse.fileBrowseWidget.Event" contentRefId="content_0" widgetRefId="fileBrowseWidget1" event="StepUpBtnClick" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Program:FileBrowseMV_0.UIconnect.File.List.StepUp">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

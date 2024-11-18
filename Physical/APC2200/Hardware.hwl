@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="APC2200.Hardware.hw" LastWriteTime="11/14/2024 14:36:58" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="5AP933.215C-00" Type="5AP933.215C-00" X="-246.699982" Y="90" />
+    <Module Name="5PPC2200_AL14_000" Type="5PPC2200.AL14-000" X="100" Y="100" />
+    <Module Name="5ACCIF01.FPLK-000" Type="5ACCIF01.FPLK-000" X="105" Y="113" />
+  </Modules>
+  <Links />
+  <InfoElements />
+</BR.AS.HardwareTopology>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="content_0_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.CurrentPage" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="CurrentPage" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.Index" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="FileSearchIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.DataProvider" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="FileSearchList" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.Filter" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="Filter" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.ShowFolderBackBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="FolderUpVisible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.ToggleNetwork" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="NetworkToggle" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.NetworkConnectionOK" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="NetworkVisible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.MaxPages" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="TotalPages" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.ToggleUSB" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="USBToggle" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.USB_Detected" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="USBVisible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Program:FileBrowseMV_0.ToggleLocal" attribute="value" />
+<Target xsi:type="brease" contentRefId="content_0" widgetRefId="fileBrowseWidget1" attribute="UserPartToggle" />
+</Binding>
+</Bindings>
+</BindingsSet>
