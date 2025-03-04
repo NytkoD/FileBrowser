@@ -5,12 +5,10 @@ FUNCTION_BLOCK FileBrowseMV
 		FileDevices : ARRAY[0..2] OF STRING[40]; (*Files devices are listed in order, Local user partition, Network, USB*)
 		MpLink : UDINT; (*Address of mappFileManagerUI*)
 		USB_Detected : BOOL; (*Allows selection of USB files if setup*)
+		ShowDialog : BOOL; (*True when filebrowsing is occuring. This was tied to a pop up in mapp view.*)
 	END_VAR
 	VAR_OUTPUT
 		FilePath : STRING[200]; (*Path to chosen file*)
-	END_VAR
-	VAR_INPUT
-		ShowDialog : BOOL; (*True when filebrowsing is occuring. This was tied to a pop up in mapp view.*)
 	END_VAR
 	VAR
 		Index : UINT; (*Index of focused file in current directory*)
@@ -33,7 +31,7 @@ FUNCTION_BLOCK FileBrowseMV
 		Close : BOOL;
 		ListClicked : BOOL; (*Indicates that user has clicked on the list *)
 		PreviousIndex : UINT; (*Keep tracks of last focused index*)
-		TempStringArrayIndex : UINT;
+		TempStringArrayIndex : STRING[5];
 		i : UINT;
 		ShowFolderBackBtn : BOOL; (*Visibility of folder back button*)
 		MpFileManagerUI_FB : MpFileManagerUI;
